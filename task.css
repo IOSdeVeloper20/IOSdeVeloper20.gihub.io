@@ -1,0 +1,167 @@
+body {
+    border: 2px solid #3BBADB;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10%;
+}
+.nav_bar {
+color: black;
+background-color: white;
+text-decoration: none;
+text-align: right;
+margin-right: 50px;
+}
+
+#icon {
+    padding: 10px;
+}
+
+nav a:active,:link,:visited {
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    color: #D1884F;
+}
+
+#icon:link,:visited,:active { 
+    text-decoration: none;
+    color: black; 
+  } 
+
+#icon:hover { 
+text-decoration: none; 
+color: #D1884F;
+} 
+
+
+   
+.left_content {
+    width: 60%;
+    padding-right: 20px;
+}
+
+.welcome_text {
+color: #3BBADB;
+}
+
+.header_text {
+color: #008AAA;
+}
+
+.developer_word {
+color: #D1884F;
+}
+
+
+.see_more {
+    text-decoration: none;
+    color: #3BBADB;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5%
+}
+
+.hire_button {
+color: white;
+background-color: #008AAA;
+border:none;
+border-radius: 5px;
+padding: 6px 30px;
+box-shadow: 0px 4px 5px rgba(125, 201, 201, 0.5);
+font-size: 2vw;
+}
+
+.see_projects_button {
+color: #008AAA;
+background-color: white;
+border-style: solid;
+border-width: 1px;
+border-color: #008AAA;
+padding: 6px 40px;
+border-radius: 5px;
+font-size: 2vw;
+}
+
+.right_content {
+    width: 40%;
+    position: absolute;
+    top: 27%;
+    left: 20%;
+}
+
+.back_card {
+    width: 200px;
+    height: 190px;
+    max-width: 100%;
+    position: absolute;
+    border-bottom-left-radius: 120px;
+    background-color: #f0bc2c;
+    top: 100px;
+    left: 108%;
+    transform: rotate(-2deg);
+    z-index: 1;
+}
+
+.person_image {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-bottom-left-radius: 120px;
+    object-fit: cover;
+    top: 90px;
+    left: 112%;
+    z-index: 2;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left_content, .right_content {
+        width: 100%;
+    }
+
+    .right_content {
+        width: 100%;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+    }
+
+    .buttons {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left_content, .right_content {
+        width: 100%;
+    }
+
+    .right_content {
+        width: 100%;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+    }
+
+    .buttons {
+        margin-top: 20px;
+    }
+}
